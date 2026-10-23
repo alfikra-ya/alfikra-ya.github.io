@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>الفكرة الاحترافية | قطع نحاسية وشرقيات دمشقية</title>
+  <meta name="description" content="قطع نحاسية وشرقيات دمشقية مطروقة ومنقوشة باليد.">
+
+  <!-- الخطوط: أريف رقعة للعناوين، أميري للنص -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20width='100'%20height='100'%20rx='18'%20fill='%230F3F57'/%3E%3Cpath%20d='M50.0%2012.0%20L86.1%2061.7%20L27.7%2080.7%20L27.7%2019.3%20L86.1%2038.3%20L50.0%2088.0%20L13.9%2038.3%20L72.3%2019.3%20L72.3%2080.7%20L13.9%2061.7z'%20fill='none'%20stroke='%23FFD24A'%20stroke-width='4'%20stroke-linejoin='round'/%3E%3Ccircle%20cx='50'%20cy='50'%20r='7'%20fill='%23FFD24A'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== الترويسة ========== -->
+  <header class="site-header">
+    <div class="container header-row">
+
+      <a class="logo" href="#home" aria-label="الرئيسية">
+        <svg viewBox="0 0 100 100" width="54" height="54" aria-hidden="true">
+          <!-- شعار: نجمة إسلامية عشارية متشابكة (نمط هندسي) -->
+          <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round">
+            <path d="M50.0 4.0 L93.7 64.2 L23.0 87.2 L23.0 12.8 L93.7 35.8 L50.0 96.0 L6.3 35.8 L77.0 12.8 L77.0 87.2 L6.3 64.2z"/>
+            <path d="M58.7 23.4 L72.7 66.5 L27.3 66.5 L41.3 23.4 L78.0 50.0 L41.3 76.6 L27.3 33.5 L72.7 33.5 L58.7 76.6 L22.0 50.0z" stroke="#FFE9A8" stroke-width="1.8"/>
+            <circle cx="50" cy="50" r="48" stroke="#FFE9A8" stroke-width="1" stroke-dasharray="1.5 3"/>
+          </g>
+          <path d="M50.0 39.0 L56.5 41.1 L60.5 46.6 L60.5 53.4 L56.5 58.9 L50.0 61.0 L43.5 58.9 L39.5 53.4 L39.5 46.6 L43.5 41.1z" fill="currentColor"/>
+        </svg>
+        <!-- اسم المتجر -->
+        <span class="logo-text">الفكرة الاحترافية</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="القائمة" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="التنقل الرئيسي">
+        <ul>
+          <li><a href="#home">الرئيسية</a></li>
+          <li><a href="#gallery">معرض النحاسيات</a></li>
+          <li><a href="#videos">الفيديوهات</a></li>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+      </nav>
+
+      <!-- الروابط تُضبط من CONFIG في script.js -->
+      <div class="socials">
+        <a data-social="facebook" href="#" target="_blank" rel="noopener" aria-label="فيسبوك">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.5 1.6-1.5h1.7V4.4c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2v2.3H7.5V14h2.8v8h3.2z"/></svg>
+        </a>
+        <a data-social="instagram" href="#" target="_blank" rel="noopener" aria-label="إنستغرام">
+          <svg viewBox="0 0 24 24" width="20" height="20"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg>
+        </a>
+        <a class="wa-icon" data-social="whatsapp" href="#" target="_blank" rel="noopener" aria-label="واتساب">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3zm0 1.8a7.2 7.2 0 1 1-3.7 13.4l-.3-.2-2.7.7.7-2.6-.2-.3A7.2 7.2 0 0 1 12 4.8zm-2.6 3.5c-.2 0-.5.1-.7.4-.3.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.9 4.5 3.9 2.2.9 2.7.7 3.2.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.2-.2-.5-.3l-1.6-.8c-.2-.1-.4-.1-.6.1l-.7.9c-.1.2-.3.2-.5.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.4-1.8-.2-.3 0-.4.1-.5l.4-.5c.1-.1.2-.3.3-.4.1-.2 0-.3 0-.5l-.7-1.7c-.2-.4-.4-.4-.6-.4z"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== المدخل ========== -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>شرقيات دمشقية نحاسية</h1>
+          <p>صواني ودروعة ومجسمات وشعارات وشرقيات من ورشاتنا في دمشق منقوشة قطعة قطعة حرك المؤشر لترى ابداع عملنا</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#gallery">تصفّح المعرض</a>
+            <a class="btn btn-wa" data-social="whatsapp" href="#" target="_blank" rel="noopener">تواصل عبر واتساب</a>
+          </div>
+        </div>
+
+        <div class="hero-frame" id="heroFrame">
+          <canvas id="heroCanvas" width="400" height="400" aria-label="صورة القطعة مع تأثير الماء"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== معرض النحاسيات ========== -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <h2 class="section-title">معرض النحاسيات</h2>
+        <p class="section-sub">اضغط على أي قطعة لعرضها مكبّرة والاستفسار عنها.</p>
+        <div class="grid" id="galleryGrid"></div>
+      </div>
+    </section>
+
+    <!-- ========== الفيديوهات ========== -->
+    <section class="section section-alt" id="videos">
+      <div class="container">
+        <h2 class="section-title">الفيديوهات</h2>
+        <p class="section-sub">من داخل الورشة: الطرق والنقش والتشطيب.</p>
+        <div class="grid grid-videos" id="videoGrid"></div>
+      </div>
+    </section>
+
+    <!-- ========== من نحن ========== -->
+    <section class="section" id="about">
+      <div class="container about">
+        <h2 class="section-title">من نحن</h2>
+        <p>ورشة دمشقية تعمل في النحاس بحرفية عالية من التصميم والتنفيذ حتى التسليم بما يليق العميل وتصنيع قطع نحاسية بحرفية يدوية مثال: هدايا ماكيتات وميدليات ودروع وشعارات والصناعة اليدوية بماء الذهب عيار 24</p>
+
+        <div class="about-en" lang="en" dir="ltr">
+          <p>A Damascene workshop crafting brass with high craftsmanship from design and execution to delivery, matching our clients' expectations. Handcrafted brass items such as: gifts, scale models, medals, shields, logos, and 24k gold plating.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== التذييل / تواصل معنا ========== -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">الفكرة الاحترافية</p>
+        <h2 class="footer-title">تواصل معنا</h2>
+        <div class="footer-socials">
+          <a data-social="facebook" href="#" target="_blank" rel="noopener" aria-label="فيسبوك">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.5 1.6-1.5h1.7V4.4c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2v2.3H7.5V14h2.8v8h3.2z"/></svg>
+          </a>
+          <a data-social="instagram" href="#" target="_blank" rel="noopener" aria-label="إنستغرام">
+            <svg viewBox="0 0 24 24" width="24" height="24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg>
+          </a>
+          <a class="wa-icon" data-social="whatsapp" href="#" target="_blank" rel="noopener" aria-label="واتساب">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3zm0 1.8a7.2 7.2 0 1 1-3.7 13.4l-.3-.2-2.7.7.7-2.6-.2-.3A7.2 7.2 0 0 1 12 4.8zm-2.6 3.5c-.2 0-.5.1-.7.4-.3.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.9 4.5 3.9 2.2.9 2.7.7 3.2.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.2-.2-.5-.3l-1.6-.8c-.2-.1-.4-.1-.6.1l-.7.9c-.1.2-.3.2-.5.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.4-1.8-.2-.3 0-.4.1-.5l.4-.5c.1-.1.2-.3.3-.4.1-.2 0-.3 0-.5l-.7-1.7c-.2-.4-.4-.4-.6-.4z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p id="footerLocation"></p>
+        <p>للاستفسار عن الأسعار والطلبات، راسلنا على واتساب.</p>
+        <p><button class="link-btn" id="privacyOpen" type="button">سياسة الخصوصية</button></p>
+        <p><button class="link-btn" id="termsOpen" type="button">بنود الخدمة</button></p>
+      </div>
+    </div>
+    <p class="copyright">الحقوق محفوظة لشركة <span id="companyName">¥</span></p>
+    <div class="footer-band" aria-hidden="true"></div>
+  </footer>
+
+  <!-- ========== نافذة عرض القطعة ========== -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="إغلاق">&times;</button>
+      <div class="modal-stage">
+        <canvas id="modalCanvas" width="400" height="400"></canvas>
+      </div>
+      <h3 id="modalTitle" hidden></h3>
+      <!-- وصف القطعة: نص ثابت من صاحب الموقع (DETAILS في script.js)، للقراءة فقط ولا يمكن للزائر تعديله -->
+      <p class="modal-desc" id="modalDesc" hidden></p>
+      <p class="modal-note">للتعرف على السعر واستفسارات الطلب، يرجى التواصل مباشرة مع المشرف</p>
+      <a class="btn btn-wa btn-block" id="modalWa" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3zm0 1.8a7.2 7.2 0 1 1-3.7 13.4l-.3-.2-2.7.7.7-2.6-.2-.3A7.2 7.2 0 0 1 12 4.8zm-2.6 3.5c-.2 0-.5.1-.7.4-.3.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.9 4.5 3.9 2.2.9 2.7.7 3.2.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.2-.2-.5-.3l-1.6-.8c-.2-.1-.4-.1-.6.1l-.7.9c-.1.2-.3.2-.5.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.4-1.8-.2-.3 0-.4.1-.5l.4-.5c.1-.1.2-.3.3-.4.1-.2 0-.3 0-.5l-.7-1.7c-.2-.4-.4-.4-.6-.4z"/></svg>
+        اطلب عبر واتساب
+      </a>
+    </div>
+  </div>
+
+  <!-- ========== سياسة الخصوصية ========== -->
+  <div class="modal" id="privacyModal" hidden>
+    <div class="modal-box policy" role="dialog" aria-modal="true" aria-labelledby="privacyTitle">
+      <button class="modal-close" id="privacyClose" aria-label="إغلاق">&times;</button>
+      <h3 id="privacyTitle">سياسة الخصوصية</h3>
+      <div class="policy-body">
+        <p>نحترم خصوصية زوار موقع «الفكرة الاحترافية» ونحرص على حماية بياناتهم.</p>
+        <ul>
+          <li>لا يطلب الموقع تسجيلاً ولا يحتوي على نماذج إدخال، ولا نجمع منك بيانات شخصية عبره.</li>
+          <li>عند مراسلتنا على واتساب تصلنا رسالتك ورقمك مباشرة، ونستخدمهما فقط للرد على استفسارك وترتيب الطلب والتسليم.</li>
+          <li>لا نبيع بيانات التواصل ولا نشاركها مع أي طرف ثالث.</li>
+          <li>تخضع المحادثة على واتساب، وكذلك صفحاتنا على فيسبوك وإنستغرام، لسياسات الخصوصية الخاصة بتلك المنصات.</li>
+          <li>يحمّل الموقع الخطوط من Google Fonts، وقد يستقبل مزوّد الخطوط عنوان IP الزائر عند التحميل.</li>
+          <li>لطلب حذف محادثة أو بيانات تواصل محفوظة لدينا، راسلنا على واتساب.</li>
+        </ul>
+        <div class="policy-en" lang="en" dir="ltr">
+          <p><strong>Privacy Policy.</strong> This website has no sign-up and no input forms, and it does not collect personal data. When you message us on WhatsApp, we receive your message and number and use them only to reply, arrange your order and delivery. We do not sell or share contact details with third parties. WhatsApp, Facebook and Instagram are governed by their own privacy policies. The site loads fonts from Google Fonts, which may receive your IP address. To ask us to delete a conversation or your contact details, message us on WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== بنود الخدمة ========== -->
+  <div class="modal" id="termsModal" hidden>
+    <div class="modal-box policy" role="dialog" aria-modal="true" aria-labelledby="termsTitle">
+      <button class="modal-close" id="termsClose" aria-label="إغلاق">&times;</button>
+      <h3 id="termsTitle">بنود الخدمة</h3>
+      <div class="policy-body">
+        <p>باستخدامك موقع «الفكرة الاحترافية» فإنك توافق على البنود التالية:</p>
+        <ul>
+          <li><strong>عرض المنتجات:</strong> الموقع معرض لأعمالنا النحاسية فقط، ولا يتيح الشراء أو الدفع إلكترونياً.</li>
+          <li><strong>الأسعار والطلبات:</strong> لا تُعرض الأسعار على الموقع. يُتفق على السعر والمواصفات وموعد التسليم مع المشرف عبر واتساب، ولا يُعدّ الطلب مؤكداً إلا بعد هذا الاتفاق.</li>
+          <li><strong>الصناعة اليدوية:</strong> كل قطعة تُصنع يدوياً، لذا قد تختلف عن الصور المعروضة قليلاً في اللون أو النقش أو الأبعاد.</li>
+          <li><strong>الطلبات الخاصة:</strong> في الهدايا والإهداءات والماكيتات والميداليات يزوّدنا العميل بتفاصيل صحيحة وكاملة، ويُعتمد التصميم قبل البدء بالتنفيذ. وقد يتعذّر تعديل الطلب أو إلغاؤه بعد بدء التصنيع.</li>
+          <li><strong>الدفع والتسليم:</strong> تُحدَّد طريقة الدفع والتسليم وتكلفته عبر المحادثة على واتساب.</li>
+          <li><strong>الملكية الفكرية:</strong> الصور والفيديوهات والشعار والتصاميم ملك لـ«الفكرة الاحترافية»، ولا يجوز نسخها أو إعادة استخدامها دون إذن.</li>
+          <li><strong>روابط خارجية:</strong> روابط فيسبوك وإنستغرام وواتساب تخضع لشروط تلك المنصات.</li>
+          <li><strong>التعديل:</strong> قد نحدّث هذه البنود من وقت لآخر، واستمرارك في استخدام الموقع يعني موافقتك على النسخة الحالية.</li>
+        </ul>
+        <div class="policy-en" lang="en" dir="ltr">
+          <p><strong>Terms of Service.</strong> This website is a showcase of our handcrafted brass work and does not offer online purchase or payment. Prices, specifications and delivery dates are agreed with us on WhatsApp, and an order is confirmed only after that agreement. Each piece is handmade, so it may differ slightly from the photos in colour, engraving or size. For custom orders (gifts, plaques, scale models, medals) the customer provides accurate details and approves the design before production; changes or cancellation may not be possible once production starts. Photos, videos, the logo and designs belong to الفكرة الاحترافية and may not be copied or reused without permission. External links (Facebook, Instagram, WhatsApp) are subject to those platforms' terms. We may update these terms from time to time.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
